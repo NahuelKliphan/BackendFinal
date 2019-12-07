@@ -22,7 +22,7 @@ const Vehiculo = database.define('vehiculos',{
         type: Sequalize.STRING
     },
     fechaCompra:{
-        type: Sequalize.DATE
+        type: Sequalize.DATEONLY
     },
     estado:{
         type: Sequalize.STRING

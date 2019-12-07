@@ -8,10 +8,10 @@ const Revision = database.define('revisiones',{
         autoIncrement: true
     },
     fechaEntrada:{
-        type: Sequalize.DATE
+        type: Sequalize.DATEONLY
     },
     fechaSalida:{
-        type: Sequalize.DATE
+        type: Sequalize.DATEONLY
     },
     cantidad:{
         type: Sequalize.INTEGER
