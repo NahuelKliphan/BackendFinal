@@ -4,6 +4,7 @@ import database from './database/database';
 
 //importamos rutas
 import talleresRutas from './routes/talleres.route';
+import vehiculosRutas from './routes/vehiculos.route';
 
 
 //inicilizar express
@@ -20,10 +21,11 @@ app.use(function(req, res, next) { //Permite cualquier conexion al server. Quita
 
 //rutas
 app.use('/api/talleres', talleresRutas);
+app.use('/api/vehiculos', vehiculosRutas);
 
 
 //sincronizacion con la db
-//sacar force: true borra base
+//{force:true}
 database.sync()
   .then(() => console.log('Base actualizada'));
 

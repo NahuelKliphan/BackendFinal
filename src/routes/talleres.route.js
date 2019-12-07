@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { obtenerTalleres,obtenerTaller,crearTaller,modificarTaller,borrarTaller } from '../../src/constrollers/talleres.controller'
+import { obtenerTalleres,obtenerTaller,crearTaller,modificarTaller,borrarTaller } from '../../src/controllers/talleres.controller'
 
 const talleresRutas = Router();
 
