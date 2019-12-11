@@ -9,11 +9,9 @@ const Vehiculo = database.define('vehiculos',{
     },
     nroVehiculo:{
         type: Sequalize.INTEGER,
-        unique:true
     },
     patente:{
         type: Sequalize.STRING,
-        unique:true
     },
     marca:{
         type: Sequalize.STRING
