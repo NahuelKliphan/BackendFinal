@@ -14,7 +14,7 @@ const app = express();
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(function(req, res, next) { //Permite cualquier conexion al server. Quitarlo desencadenara desastres que ningun mortal esta preparado para aguantar
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin",'*');
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.header("Access-Control-Allow-Methods","*")
   next();

@@ -28,7 +28,7 @@ const Vehiculo = database.define('vehiculos',{
         type: Sequalize.STRING
     },
     foto:{
-        type: Sequalize.STRING
+        type: Sequalize.TEXT,
     },
     tipo:{
         type: Sequalize.STRING
